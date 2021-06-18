@@ -185,6 +185,8 @@ func defaults() []Option {
 	}
 }
 
+var LibP2P = libp2p()
+
 func libp2p() Option {
 	return Options(
 		Override(new(peerstore.Peerstore), pstoremem.NewPeerstore),
